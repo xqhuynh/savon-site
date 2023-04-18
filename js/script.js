@@ -1,5 +1,13 @@
+// Menu Icon Nabvar
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+};
+
 // Scroll sections active link
-// Horizontal bar changes to different sections as user scrolls
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
