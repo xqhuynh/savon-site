@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -55,7 +55,7 @@ body {
 
 .header.sticky {
   background: var(--bg-color);
-  box-shadow: 0 0.1rem 0.1rem var(--shadow-color);
+  box-shadow: 0 0.1rem 1rem var(--shadow-color);
 }
 
 .logo {
@@ -149,7 +149,7 @@ section {
   align-items: center;
   width: 4rem;
   height: 4rem;
-  background-color: transparent;
+  background: transparent;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
@@ -184,18 +184,18 @@ section {
   border-color: var(--main-color);
 }
 
-.home .professional-container {
+.home .profession-container {
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   pointer-events: none;
 }
 
-.home .professional-container .professional-box {
+.home .profession-container .profession-box {
   position: absolute;
   top: 0;
   right: 0;
@@ -204,7 +204,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: professionanRotate 13s ease-out infinite;
+  animation: professionRotate 13s ease-out infinite;
 }
 
 @keyframes professionRotate {
@@ -233,7 +233,7 @@ section {
   }
 }
 
-.home .professional-box .profession {
+.home .profession-box .profession {
   position: absolute;
   left: 0;
   display: flex;
@@ -246,12 +246,12 @@ section {
   padding: 13px 0;
 }
 
-.home .professional-box .profession:nth-child(1) i {
+.home .profession-box .profession:nth-child(1) i {
   margin-right: 15px;
 }
 
-.home .professional-box .profession:nth-child(2),
-.home .professional-box .profession:nth-child(4) {
+.home .profession-box .profession:nth-child(2),
+.home .profession-box .profession:nth-child(4) {
   padding-bottom: 20px;
 }
 
@@ -265,7 +265,7 @@ section {
   font-weight: 600;
 }
 
-.home .professional-box .circle {
+.home .profession-box .circle {
   width: 560px;
   height: 560px;
   border: 3px solid var(--main-color);
@@ -273,7 +273,7 @@ section {
   z-index: -1;
 }
 
-.home .professional-container .overlay {
+.home .profession-container .overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -531,6 +531,11 @@ span {
 
 .testimonial-box .swiper-pagination-bullet-active {
   background: var(--main-color);
+}
+
+.contact {
+  min-height: auto;
+  padding-bottom: 7rem;
 }
 
 .contact h2 {
