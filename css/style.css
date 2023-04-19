@@ -14,7 +14,8 @@
 :root {
   --bg-color: #fdfdfd;
   --text-color: #333;
-  --main-color: #754ef9;
+  /* --main-color: #754ef9; */
+  --main-color: #0cb41d;
   --white-color: #fdfdfd;
   --shadow-color: rgba(0, 0, 0, 0.2);
 }
