@@ -333,23 +333,29 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form action="#">
+      <form action="https://formsubmit.co/xqhuynh@gmail.com" method="post">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Phone Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="phone" placeholder="Phone Number" />
+          <input type="text" name="_subject" placeholder="Subject" />
         </div>
 
         <textarea
-          name=""
+          name="message"
           id=""
           cols="30"
           rows="10"
           placeholder="Your Message"
+          required
         ></textarea>
         <input type="submit" value="Send Message" class="btn" />
       </form>
